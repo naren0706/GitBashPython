@@ -16,7 +16,7 @@ def function(git_command):
         
 def createUC(UC,msg):
     function("git checkout -b"+UC)
-    function("git add .")
+    function("git add --all :!Run.py")
     function( "git commit -m \" [Narenthra Kishore] Add : "+msg+"\"")
     function("git push origin "+UC)
     function("git checkout main")
