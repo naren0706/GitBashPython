@@ -26,6 +26,7 @@ def createUC(UC,msg):
     return;
         
 print("Create UC and push with a commit message and merge it with main ")
+function("git branch")
 UCname=input("Enter the UseCaseName:")
 commitmessage=input("Enter the commit message :")
 createUC(UCname,commitmessage)
