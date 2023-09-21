@@ -4,6 +4,7 @@ def function(git_command):
     try:
         result = subprocess.run(git_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         
+        print(git_command,end="|")
         # Check if the command was successful
         if result.returncode == 0:
             print("Command executed successfully:")
